@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "test": "qunit"
+  },
+  "name": "fyc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "qunit": "^2.13.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcorio/fyc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tcorio/fyc/issues"
+  },
+  "homepage": "https://github.com/tcorio/fyc#readme",
+  "description": ""
+}
