@@ -1,13 +1,18 @@
+### Nom de la CI
 name: UNIT TEST
 on:
+  ### On trigger l'évenement lors d'une pull request sur la branche master
   pull_request:
     branches: master
 
 jobs:
   build:
+    ### On définit notre machine virtuelle sur un linux
     runs-on: ubuntu-latest
     steps:
+      ### Extraction du référenciel afin que le workflow puisse y accéder 
       - uses: actions/checkout@v2
+      ### Mise en place d'un environnement node
       - uses: actions/setup-node@v1
         with:
           node-version: 12
