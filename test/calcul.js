@@ -15,5 +15,5 @@ QUnit.test('Multiplication', assert => {
   assert.equal(calcul(9,'*',9), 81, 'Le calcul est incorrect !!!!');
 });
 QUnit.test('Addition supplémentaire', assert => {
-  assert.equal(calcul(5,'+',5), 10, 'Le calcul est incorrect !!!!');
+  assert.equal(calcul(5,'+',4), 10, 'Le calcul est incorrect !!!!');
 });
