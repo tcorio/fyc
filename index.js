@@ -1,5 +1,3 @@
-const calcul = require('../calcul.js');
-
 const button = document.getElementById('button');
 
 button.onclick = function onClickButton() {
