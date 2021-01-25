@@ -1,0 +1,20 @@
+## Nom de la CI
+name: UNIT TEST
+on:
+  pull_request:
+    branches: master
+
+jobs:
+  build:
+    ## On définit notre machine virtuelle
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - uses: actions/setup-node@v1
+          with:
+            node-version: 12
+        - name: Installation de Qunit
+          run: npm install
+        - name: Executer les tests unitaires
+          run: npm test
+     
